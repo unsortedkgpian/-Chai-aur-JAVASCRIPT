@@ -25,3 +25,19 @@ console.log(shot1);
 let isLoggedIn= 1
 let booleanIsLoggedIn= Boolean(isLoggedIn);
 console.log(isLoggedIn)
+
+
+// *******Operations***********
+
+let value = 3
+let negative = -value
+
+// console.log(negative);
+
+console.log(2+2);
+console.log(2-2);
+console.log(2*2);
+console.log(2**2);
+console.log(2/2);
+console.log(2%2);
+
