@@ -6,6 +6,8 @@
 
 // console.log(3+3) console.log("Hitesh") // error
 
+// code readability should be high
+
 console.log(3+3);
 
 console.log("Aditya");
@@ -13,21 +15,26 @@ console.log("Aditya");
 
 let name= "Aditya"// string
 let age = 23 // number
-let isLoggedIn = false
+let isLoggedIn = false// boolean
+let state = null;
 
+
+// Primitive DataTypes
 // number =>2 to 53
-// bigInt
+// bigint
 // string =>""
-// boolean => true/fals
-// null => standalone value
+// boolean => true/false
+// null => standalone value // object
 // undefined => 
 // symbol => unique
 
-
+// Non-Primitive DataTypes
 // object
 
-console.log(typeof "aditya"); 
+// console.log(typeof "aditya"); 
 
-console.log(typeof null);// object
+// console.log(typeof null);// object
 
-console.log(typeof undefined);
+// console.log(typeof undefined);
+
+console.table([typeof name, typeof age, typeof isLoggedIn, typeof state, typeof undefined]);
