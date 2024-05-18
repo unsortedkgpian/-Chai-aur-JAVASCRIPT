@@ -10,13 +10,16 @@ let accountState;
 // console.log(accountId);
 
 accountEmail="adit@gmail.com";
+accountPassword="2121212121" ;
+accountCity = "pigeon";
+
 
 console.log(accountEmail); 
 
-console.table([accountId, accountEmail, accountPassword, accountCity, accou]);
+console.table([accountId, accountEmail, accountPassword, accountCity, accountEmail, accountState]);
 
 /**
- * 
+ * Prefered to not use var to decleare a variable because the the problem of block scope and functional scope
  * 
  * 
  */
