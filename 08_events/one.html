@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li id="Cow">Cow </li>
+            <li id="Dog">Dog</li>
+            <li id="Elefent">Elefent</li>
+            <li id="pig">pig</li>
+            <li id="owl" >owl</li>
+        </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('pig').onclick = function(){
+    //     alert("pig clinket");
+    // }
+
+    // document.getElementById('Cow').addEventListener('click', function(e){
+    //     alert("How are you");
+    // })//
+
+    // there is 3rd valiale alos in addEventListener false and true
+    // addEventListener('click' , function(){}, false)
+
+    // attacedEvent()
+    // jqueary
+    
+    // Important Events
+    //Type - click , keyboardpress
+    // timestamp -- 
+    //defaultPrevented ==> It can change the default working of any thing like in form of submit button
+    // target ==> 
+    // toElement 
+
+    // *******++++++++++++++++***************+++++++++
+    // scrElement
+    // curentTarget
+    // ClinntX, clientY, screenX, screenY
+    // altKey  shiftKey
+    // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    // false => bubling up the tree
+    // true => capturing down the tree
+    // stop propagation
+
+    document.getElementById('owl').addEventListener('click', ()=>{
+        console.log(`owl`);
+    }, true)
+    document.getElementById('images').addEventListener('click', ()=>{
+        console.log('Images');
+    }, true);
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+            
+        }
+    })
+</script>
+</html>

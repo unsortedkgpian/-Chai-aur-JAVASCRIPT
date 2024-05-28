@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asyc function</title>
+</head>
+<body>
+    <h1>Chai aur JavaScript</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const justGame = setTimeout(() => {
+        console.log("Aditya");
+        document.querySelector('h1').innerHTML="Hi baby";
+    }, 5000)
+    // setInterval(() => {
+    //     console.log("How are baby girl");
+    // }, 3000);
+
+    document.querySelector('#stop').addEventListener('click', ()=>{
+        clearTimeout(justGame);
+        console.log("Stoped");
+    })
+
+</script>
+</html>
